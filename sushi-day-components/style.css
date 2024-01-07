@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --blakc:#000000;
+}
+body{
+  height:100vh;
+  background-image: url(pexels-photo-2339009.jpeg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F5F4F0;
+  position: relative;
+  z-index: 999;
+}
+body::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 99;
+}
+.container .nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(1.875rem);
+  background-color: rgba(0, 0, 0, .4);
+  width: 100%;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+.container .nav h3{
+
+}
+.container .nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.container .nav ul li{
+  padding: 20px 5px;
+  list-style: none;
+  color: rgba(255, 255, 255, .5);
+}
+.container .nav ul li:hover{
+  color: #F5F4F0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .6);
+}
+.container .sec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  backdrop-filter: blur(1.875rem);
+  background-color: rgba(0, 0, 0, .4);
+  max-width: 500px;
+  border-radius: 10px;
+}
+@media(max-width:767px){
+  .container .sec{
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+.container .sec .content{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h3{
+  font-size: 24px;
+}
+.container .sec .content span{
+  margin-top: 15px;
+  font-size: 12px;
+}
+.container .sec img{
+  max-width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+.container .explore a{
+  text-align: center;
+  color: #F5F4F0;
+  backdrop-filter: blur(1.875rem);
+  background-color: rgba(0, 0, 0, .3);
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.container p a{
+  color: #F5F4F0;
+  font-size: 12px;
+}
